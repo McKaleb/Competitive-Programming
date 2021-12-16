@@ -1,12 +1,5 @@
 import sys
 
-# Name - Kaleb Mathewos
-# ID - UGR/6298/13
-# Section - 1
-# College - AAiT
-# Department - Pre-engineering
-# GitHub - @McKaleb
-
 # P.S. The emojis included in this program will be visible if you use VS-Code. They may not be visible in the original python IDLE.
 
 print("\n★ Students' Café Menu - AAU® (v1.0) ★\n")
