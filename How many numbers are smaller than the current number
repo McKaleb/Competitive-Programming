@@ -8,4 +8,4 @@ class Solution:
                     count += 1
             new.append(count)
                 
-        return new
+        return new 
