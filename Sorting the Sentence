@@ -1,0 +1,12 @@
+class Solution:
+    def sortSentence(self, s: str) -> str:
+        NList = s.split(" ")
+        newW = [""]*len(NList)
+        for word in NList:
+            listWord = list(word)
+            x = int(listWord[-1])
+            listWord.remove(listWord[-1])
+            finalW = ''.join(listWord)
+            newW[x-1] = finalW
+        Sentence = " ".join(newW)
+        return Sentence
