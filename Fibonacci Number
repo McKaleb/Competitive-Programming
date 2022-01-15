@@ -1,0 +1,15 @@
+class Solution:
+    def fib(self, n: int) -> int:
+        i = 0
+        j = 1
+        count = 1
+        if n == 0:
+            return 0
+        elif n == 1:
+            return 1
+        elif n >= 2:
+            for k in range(n-1):
+                fib = i + j
+                i,j=j,fib
+            return fib
+            
