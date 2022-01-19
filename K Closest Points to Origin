@@ -1,0 +1,16 @@
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        new = []
+        m = len(points)
+        for i in range(m):
+            dist2 = (points[i][0]**2)+(points[i][1]**2)
+            new.append(dist2)
+        new2 = sorted(new)
+        final = []
+        for i in range(k):
+            for j in range(m):
+                if len(final) < k:
+                    if new2[i] == new[j] and points[j] not in final:
+                        final.append(points[j])
+
+        return final
