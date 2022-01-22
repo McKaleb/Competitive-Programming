@@ -1,0 +1,20 @@
+class Solution:
+    def largestNumber(self, nums: List[int]) -> str:
+        new = []
+        arr = sorted([list(str(num)) for num in nums], reverse=True)
+        c = len(arr)-1
+        i = c
+        while i > 0:
+            j = i-1
+            if int(''.join(arr[j]+arr[i])) < int(''.join(arr[i]+arr[j])):
+                arr[j],arr[i] = arr[i],arr[j]
+                if i < c:
+                    i +=1
+            else:
+                i-=1
+        for i in arr:
+            new.append(''.join(i))
+        if int(''.join(new))==0:
+            return '0'
+        else:
+            return ''.join(new)
