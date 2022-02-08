@@ -1,38 +1,20 @@
 import math
-
 def theater_sqaure(a, b, c):
-
     new = 1
-
     if c-a>=0:
-
         pass
-
     else:
-
         new*=int(math.ceil(a/c))
-
     if c-b>=0:
-
         pass
-
     else:
-
         new*=int(math.ceil(b/c))
-
     return new
 
-
 if __name__ == '__main__':
-
     inputs = list(map(int, input().rstrip().split()))
-
     a = inputs[0]
-
     b = inputs[1]
-
     c = inputs[2]
-
     result = theater_sqaure(a,b,c)
-
     print(result)
