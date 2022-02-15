@@ -1,0 +1,15 @@
+class Solution:
+    def isValid(self, s: str) -> bool:
+        left = "([{"
+        right = ")]}"
+        Stack = []
+        for i in s:
+            if i in left:
+                Stack.append(i)
+            elif i in right:
+                if not Stack:
+                    return False
+                if right.index(i) != left.index(Stack.pop()):
+                    return False
+        return not Stack
+                    
