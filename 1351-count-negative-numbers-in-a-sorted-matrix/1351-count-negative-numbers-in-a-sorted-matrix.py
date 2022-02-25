@@ -7,7 +7,6 @@ class Solution:
             start = 0
             while left <= right:
                 mid = left+(right-left)//2
-                
                 if row[mid] < 0:
                     right = mid-1
                     start = mid
