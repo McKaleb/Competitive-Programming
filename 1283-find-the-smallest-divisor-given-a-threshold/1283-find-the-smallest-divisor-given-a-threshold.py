@@ -19,8 +19,4 @@ class Solution:
                 right = mid-1
             else:
                 left = mid+1
-        # y = sum(nums)
-        # if y <= threshold and 1 < ans:
-        #     return 1
-        # else:
         return ans
