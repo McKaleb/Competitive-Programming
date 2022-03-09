@@ -17,7 +17,8 @@ class Solution:
                     j+=1
                 else:
                     i+=1
-            if dayscap[-1]==0 or sum(dayscap) == y:
+                    
+            if sum(dayscap) == y:
                 best = mid
                 right = mid-1
             else:
