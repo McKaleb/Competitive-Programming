@@ -2,8 +2,6 @@ class Solution:
     def shipWithinDays(self, weights: List[int], days: int) -> int:
         left = max(weights)
         right = sum(weights)
-        # left = x
-        # right = y
         best = left
         while left<=right:
             mid=left + (right-left)//2
